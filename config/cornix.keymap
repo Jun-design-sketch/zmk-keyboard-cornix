@@ -182,9 +182,9 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none             &kp W         &kp E          &kp R          &kp T        &mkp MB3                 &none           &kp Y            &kp U          &kp I          &kp O         &none
-&kp Q             &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &kp G        &mkp MB1                 &msc SCRL_UP    &kp H            &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &kp P
-&hm_l LEFT_GUI A  &kp X         &kp C          &kp V          &kp B        &mkp MB2   &none  &none  &msc SCRL_DOWN  &kp N            &kp M          &kp COMMA      &kp PERIOD    &hm_r RGUI SQT
+&none             &kp W         &kp E          &kp R          &kp T        &kp LG(W)                &mo 7           &kp Y            &kp U          &kp I          &kp O         &none
+&kp Q             &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &kp G        &mkp MB1                 &msc SCRL_DOWN  &kp H            &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &kp P
+&hm_l LEFT_GUI A  &kp X         &kp C          &kp V          &kp B        &mkp MB2   &none  &none  &msc SCRL_UP    &kp N            &kp M          &kp COMMA      &kp PERIOD    &hm_r RGUI SQT
 &kp Z             &none         &none          &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB                &lt 4 ENTER     &lt 5 BACKSPACE  &lt 6 DELETE   &none          &none         &kp SLASH
             >;
 
@@ -290,21 +290,12 @@
             >;
         };
 
-        Debug_layer {
-            display-name = "Debug";
-
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
-            // | EXTPWR | BTCLR | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
-            // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
-            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
-            //                    |         |         |         |         |         | |      |      |      |       |      |
-
+        Center {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &bootloader   &trans  &trans  &bootloader  &none  &none   &none  &none  &none
-&none       &none         &none         &none         &none         &none                         &none        &none  &kp N7  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans  &kp LG(Q)                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LG(RBKT)          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
