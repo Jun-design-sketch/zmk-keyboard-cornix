@@ -275,8 +275,8 @@
             display-name = "mouse";
             bindings = <
 &trans    &none     &none      &none       &none  &trans                  &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &none
-&trans    &kp LALT  &kp LCTRL  &kp LSHIFT  &none  &trans                  &trans    &none       &mmv MOVE_X(-6000)  &mmv MOVE_Y(6000)  &mmv MOVE_Y(-6000)  &kp K_UNDO
-&kp LGUI  &none     &none      &none       &none  &trans  &trans  &trans  &trans    &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_X(6000)
+&trans    &kp LALT  &kp LCTRL  &kp LSHIFT  &none  &trans                  &trans    &none       &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)  &mmv MOVE_Y(-4000)  &kp K_UNDO
+&kp LGUI  &none     &none      &none       &none  &trans  &trans  &trans  &trans    &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_X(4000)
 &none     &none     &none      &none       &none  &none                   &mkp MB2  &mkp MB1    &mkp MB3        &none           &none         &msc SCRL_RIGHT
             >;
 
