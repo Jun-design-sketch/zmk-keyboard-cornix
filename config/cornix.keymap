@@ -154,10 +154,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none             &kp W         &kp E          &kp R          &kp T        &mo 8                    &mo 7           &kp Y            &kp U          &kp I          &kp O         &none
-&kp Q             &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &kp G        &mkp MB1                 &msc SCRL_DOWN  &kp H            &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &kp P
-&hm_l LEFT_GUI A  &kp X         &kp C          &kp V          &kp B        &mkp MB2   &none  &none  &msc SCRL_UP    &kp N            &kp M          &kp COMMA      &kp PERIOD    &hm_r RGUI SQT
-&kp Z             &none         &none          &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB                &lt 4 ENTER     &lt 5 BACKSPACE  &lt 6 DELETE   &none          &none         &kp SLASH
+&none             &kp W         &kp E          &kp R          &kp T        &mo 8                    &mo 7        &kp Y            &kp U          &kp I          &kp O         &none
+&kp Q             &hm_l LALT S  &hm_l LCTRL D  &hm_l LSHFT F  &kp G        &mkp MB1                 &mkp MB1     &kp H            &hm_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &kp P
+&hm_l LEFT_GUI A  &kp X         &kp C          &kp V          &kp B        &mkp MB2   &none  &none  &mkp MB2     &kp N            &kp M          &kp COMMA      &kp PERIOD    &hm_r RGUI SQT
+&kp Z             &none         &none          &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB                &lt 4 ENTER  &lt 5 BACKSPACE  &lt 6 DELETE   &none          &none         &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -264,20 +264,20 @@
 
         Center {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LG(Q)                             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LG(RBKT)          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LG(Q)                      &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(LEFT)                   &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LC(RIGHT)  &trans  &trans  &msc SCRL_UP    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         mouse_fast {
             display-name = "mouse";
             bindings = <
-&trans    &none     &none      &none       &none  &trans                  &trans    &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &none
+&trans    &none     &none      &none       &none  &trans                  &trans    &kp K_REDO  &kp K_PASTE         &kp K_COPY         &kp K_CUT           &none
 &trans    &kp LALT  &kp LCTRL  &kp LSHIFT  &none  &trans                  &trans    &none       &mmv MOVE_X(-4000)  &mmv MOVE_Y(4000)  &mmv MOVE_Y(-4000)  &kp K_UNDO
-&kp LGUI  &none     &none      &none       &none  &trans  &trans  &trans  &trans    &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_X(4000)
-&none     &none     &none      &none       &none  &none                   &mkp MB2  &mkp MB1    &mkp MB3        &none           &none         &msc SCRL_RIGHT
+&kp LGUI  &none     &none      &none       &none  &trans  &trans  &trans  &trans    &none       &msc SCRL_LEFT      &msc SCRL_DOWN     &msc SCRL_UP        &mmv MOVE_X(4000)
+&none     &none     &none      &none       &none  &none                   &mkp MB2  &mkp MB1    &mkp MB3            &none              &none               &msc SCRL_RIGHT
             >;
 
             sensor-bindings =
