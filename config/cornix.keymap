@@ -138,7 +138,19 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_number {
+            bindings = <&tog 5>;
+            key-positions = <13 14 15>;
+        };
+
+        combo_mouse {
+            bindings = <&tog 7>;
+            key-positions = <1 2 3>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
