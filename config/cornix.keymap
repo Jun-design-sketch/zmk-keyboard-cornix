@@ -229,10 +229,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none     &none     &none      &none       &mo 7      &none                  &none     &kp LG(LS(Z))  &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp RG(Z)
-&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &mkp LCLK  &none                  &none     &mkp LCLK      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none     &none     &none      &none       &mkp RCLK  &none  &trans  &trans  &none     &mkp RCLK      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&none     &none     &none      &none       &none      &none                  &mkp MB2  &mkp MB1       &mkp MB3        &none           &none         &none
+&none     &none     &none      &msc SCRL_DOWN  &mo 7      &none                  &none     &kp LG(LS(Z))  &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp RG(Z)
+&kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT      &mkp LCLK  &none                  &none     &mkp LCLK      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none     &none     &none      &msc SCRL_UP    &mkp RCLK  &none  &trans  &trans  &none     &mkp RCLK      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&none     &none     &none      &none           &none      &none                  &mkp MB2  &mkp MB1       &mkp MB3        &none           &none         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
