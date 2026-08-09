@@ -141,14 +141,14 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_number {
-            bindings = <&tog 5>;
-            key-positions = <13 14 15>;
+        app {
+            bindings = <&mo 8>;
+            key-positions = <42 43>;
         };
 
-        combo_mouse {
-            bindings = <&tog 3>;
-            key-positions = <1 2 3>;
+        raycast {
+            bindings = <&mo 9>;
+            key-positions = <45 44>;
         };
     };
 
